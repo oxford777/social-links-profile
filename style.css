@@ -1,0 +1,93 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:hsl(0, 0%, 8%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*permet de centrer honrizontalement*/
+    justify-content: center; /*permet de centrer verticalement*/
+    min-height: 100vh; /*permet de prendre toute la hauteur de l'ecran donc "d'abaisser visuellement" le profile*/
+
+}
+
+body p{
+    font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+}
+
+footer { 
+    font-size: 12px; 
+    text-align: center;
+    color: hsl(0, 0%, 100%); 
+    margin-top: auto;
+    padding-bottom: 0.5rem; /* c'est pour l’éloigner un peu du bord bas */
+}
+
+.profile{
+    background-color: hsl(0, 0%, 12%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: clamp(280px, 90vw, 360px);
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+   
+}
+
+.profile h1{
+    margin: 2rem 0 0.5rem 0;
+}
+
+.profile p{
+    margin: 2rem 0 1rem 0;
+}
+
+.avatar{
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: clamp(72px, 20vw, 88px);
+    height: clamp(72px, 20vw, 88px);
+
+}
+
+.location{
+    color: hsl(75, 94%, 57%);
+}
+
+.btn{
+    display: block;
+    border: 1px solid hsl(0, 0%, 20%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    font-size: clamp(0.75rem, 2.5vw, 0.875rem);
+    background-color: hsl(0, 0%, 20%);
+    text-decoration: none;
+    padding: clamp(0.6rem, 2vw, 0.7rem);
+    margin: clamp(0.5rem, 1.8vw, 0.8rem) 0;
+    font-weight: 600;
+    
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+
+
